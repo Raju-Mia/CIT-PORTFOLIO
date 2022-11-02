@@ -12,7 +12,7 @@
             <div class="sidebar">
                 <h2>Sidebar</h2>
             <ul>
-                <li><a href="#">About Me</a></li>
+                <li><a href="{% url 'check' %}">About Me</a></li>
                 <li><a href="#">Skill</a></li>
                 <li><a href="#">Interest</a></li>
                 <li><a href="#">Award</a></li>
@@ -23,7 +23,11 @@
             </div>
 
             <div class="main_content">
-                <div class="header"> {% block username %}{% endblock username %} Welcome!!</div>
+                <div class="header">
+                    {% block user_name %}
+                    {% endblock user_name %} 
+                    Welcome!!
+                </div>
                 <div class="info">
                     {% block content %}
                     {% endblock content %}

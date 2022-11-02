@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+<!--try to call the user name but it's not working-->
+<!--{% block user_name %}
+{{ skills.user.username }}
+{% endblock user_name %}
+-->
+
+
+{% block content %}
+{% for i in skills %}
+    {{ i.name }}<br>
+{% endfor %}
+{% endblock content %}

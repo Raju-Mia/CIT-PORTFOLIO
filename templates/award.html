@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+<!--this is about_me called from dashboard user-->
+{% block content %}
+{% for i in awards %}
+    {{ i.name }}<br>
+{% endfor %}
+{% endblock content %}
