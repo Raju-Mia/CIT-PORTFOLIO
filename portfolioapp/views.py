@@ -8,6 +8,8 @@ from .models import *
 def check(request):
     return HttpResponse("app urls setting okay")
 
+def home(request,name):
+    return render(request, 'home.html')
 
 
 def about_me(request,name):
