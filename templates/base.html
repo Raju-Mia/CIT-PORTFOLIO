@@ -1,0 +1,37 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href={% static 'css/style.css' %}>
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <div class="sidebar">
+                <h2>Sidebar</h2>
+            <ul>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Skill</a></li>
+                <li><a href="#">Interest</a></li>
+                <li><a href="#">Award</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Experience</a></li>
+                
+            </ul>
+            </div>
+
+            <div class="main_content">
+                <div class="header"> {% block username %}{% endblock username %} Welcome!!</div>
+                <div class="info">
+                    {% block content %}
+                    {% endblock content %}
+                </div>    
+            </div>
+        </div>
+
+
+    </body>
+
+</html>

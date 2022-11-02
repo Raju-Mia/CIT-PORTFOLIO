@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!--this is username called from dashboard user-->
+{% block username %}
+{{ about_me.user.username}}
+{% endblock username %}
+
+<!--this is about_me called from dashboard user-->
+{% block content %}
+{{ about_me.about_me }}
+{% endblock content %}
