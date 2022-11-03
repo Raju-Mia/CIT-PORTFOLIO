@@ -3,7 +3,25 @@
 
 
 {% block content %}
-{{ }}
-{% comment %} {{ Experience.name}} {% endcomment %}
-<p>hi</p>
+{% for i in exprience %}
+
+<p>Experience</p>
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{ i.name_of_company }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{ i.start_year}}</h6>
+      <p class="card-text">Department of {{ i.degree }}</p>
+      <a href="#" class="card-link">{{ i.end_year }}</a>
+      <a href="#" class="card-link">{{ i.designation }}</a>
+      <a href="#" class="card-link">{{ i.description }}</a>
+    </div><br>
+  </div>
+{% endfor %}
 {% endblock content %}
+
+
+{% block user_name %}
+{% for i in exprience %}
+    {{ i.user.username}}
+{% endfor %}
+{% endblock user_name %}
