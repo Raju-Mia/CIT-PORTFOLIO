@@ -9,6 +9,12 @@
 -->
 
 
+
+
+{% block name %}
+{{ name }} <span>'s</span> skills.
+{% endblock name %}
+
 {% block content %}
 {% for i in skills %}
     {{ i.name }}<br>

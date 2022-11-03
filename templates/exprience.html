@@ -20,8 +20,6 @@
 {% endblock content %}
 
 
-{% block user_name %}
-{% for i in exprience %}
-    {{ i.user.username}}
-{% endfor %}
-{% endblock user_name %}
+{% block name %}
+{{ name }} <span>'s</span> Experience.
+{% endblock name %}

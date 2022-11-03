@@ -2,6 +2,11 @@
 {% load static %}
 
 
+{% block name %}
+{{ name }} <span>'s</span> Education.
+{% endblock name %}
+
+
 {% block content %}
 
 {% for i in education %}
