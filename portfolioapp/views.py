@@ -37,9 +37,13 @@ def award(request,name):
 
 
 def education(request,name):
-    pass
+    educations = Education.objects.filter(user__username = name)
+    context = {'education':educations}
+    return render(request, 'education.html', context)
 
 
 
 def exprience(request,name):
-    pass
+    expriences = Experience.objects.filter(user__username = name)
+    context = {'exprience':expriences}
+    return render(request, 'exprience.html', context)

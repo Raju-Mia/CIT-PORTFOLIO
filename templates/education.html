@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+{% for i in education %}
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{ i.user }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{ i.name_of_institution}}</h6>
+      <p class="card-text">Department of {{ i.department }}</p>
+      <a href="#" class="card-link">{{ i.passing_year}}</a>
+      <a href="#" class="card-link">{{ i.name_of_degree }}</a>
+    </div><br>
+  </div>
+{% endfor %}
+{% endblock content %}

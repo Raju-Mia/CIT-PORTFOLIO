@@ -8,8 +8,8 @@ urlpatterns = [
     path('<name>/about-me', views.about_me, name='about-me'), #dynamic url pass for get data.
     path('<name>/skill', views.skill, name='skill'),
     path('<name>/intarest', views.intarest, name='intarest'),
-    path('<name>/award', views.award, name='award'),
-    path('<name>/education/', views.education, name='education'),
-    path('<name>/exprience/', views.exprience, name='exprience'),
+    path('<name>/award', views.award, name='award-name'),
+    path('<name>/education', views.education, name='education'),
+    path('<name>/exprience', views.exprience, name='exprience'),
 
 ]
